@@ -24,10 +24,7 @@
 #include "GL/glx_obs.h"
 
 static const int fb_attribs[] = {
-	/* Hardcoded for now... */
-	GLX_STENCIL_SIZE, 8,
-	GLX_DEPTH_SIZE, 24, 
-	GLX_BUFFER_SIZE, 32, /* Color buffer depth */
+	GLX_X_RENDERABLE, True,
 	GLX_DOUBLEBUFFER, True,
 	None
 };
